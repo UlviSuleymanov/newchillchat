@@ -1,0 +1,24 @@
+header {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  max-height: 100px;
+  background-color: yellow;
+  justify-content: center;
+  justify-items: center;
+  grid-area: Header;
+}
+.logo {
+  width: 90px;
+  height: 90px;
+  margin-right: auto;
+}
+.button {
+  padding: 1rem;
+  margin: 1rem;
+  width: 105px;
+  border-radius: 25px;
+}
+.button:hover {
+  background-color: blue;
+}

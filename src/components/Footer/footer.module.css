@@ -1,0 +1,15 @@
+.wrapper {
+  display: flex;
+  background-color: blue;
+  margin-top: 5rem;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 2.5rem;
+  grid-area: Footer;
+}
+.address address {
+  display: inline;
+  justify-content: center;
+  justify-items: center;
+  padding: 2rem;
+}
