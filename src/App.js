@@ -8,7 +8,7 @@ import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
 import NavBar from './components/NavBar/NavBar';
 import Dialogs from './containers/DialogsPage/Dialogs';
-
+import Users from './containers/UsersPage/Users';
 const isLogged = false;
 
 function App(props) {
@@ -21,6 +21,7 @@ function App(props) {
         <Routes>
           <Route path="/profile/*" element={<ProfilePage />}></Route>
           <Route path="/dialogs/*" element={<Dialogs />}></Route>
+          <Route path="/users/*" element={<Users />}></Route>
         </Routes>
       </div>
       <Footer className="Footer" />

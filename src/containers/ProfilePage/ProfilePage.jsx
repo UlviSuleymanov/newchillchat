@@ -47,9 +47,9 @@ const ProfilePage = () => {
               dispatch(
                 addPost({
                   id: elementKey + Math.random(1 - 100),
-                  name: 'Ulvi',
+                  name: 'Ulvi Suleymanov',
                   text: newText,
-                  likeCount: 0,
+                  likeCount: Math.floor(Math.random(1 - 100)),
                 }),
               );
             }}
