@@ -1,18 +1,15 @@
 import React from 'react';
-import userPhoto from '../../../assets/images/user.png';
-
-const MyPosts = () => {
+import s from './myposts.module.css';
+const MyPosts = (props) => {
   return (
-    <div>
-      <div>
-        <img src={userPhoto} alt="userphoto" />
-        <div>User Name</div>
-        <div>
-          <h4>Add Post</h4>
-          <textarea placeholder="What is in your mind?"></textarea>
-          <button type="button">Add</button>
-        </div>
-      </div>
+    <div className={s.old_post}>
+      <img
+        src="https://lumiere-a.akamaihd.net/v1/images/databank_jarjarbinks_01_169_c70767ab.jpeg?region=0%2C0%2C1560%2C780"
+        alt="profilepic"
+      />
+      <p>{props.name}</p>
+      <p>{props.text}</p>
+      <p>Likes {props.likeCount}</p>
     </div>
   );
 };

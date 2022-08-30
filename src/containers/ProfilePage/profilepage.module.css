@@ -1,3 +1,29 @@
-.wrapper {
+.profile_wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: auto;
+  height: auto;
+  margin: 0;
   grid-area: Content;
+}
+.profile_wrap__background img {
+  max-width: 150%;
+}
+.profile-wrap-background {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile_wrap__content {
+  display: flex;
+  flex-direction: column;
+}
+.profile_wrap__content img {
+  max-width: 250px;
+  border-radius: 30px;
 }
