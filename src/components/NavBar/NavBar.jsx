@@ -7,7 +7,7 @@ let NavBar = () => {
     <nav className={s.wrapper}>
       <NavLink to="profile/">Profile</NavLink>
       <NavLink to="dialogs/">Dialogs</NavLink>
-      <NavLink to="users/">Users</NavLink>
+      <NavLink to="users/*">Users</NavLink>
     </nav>
   );
 };

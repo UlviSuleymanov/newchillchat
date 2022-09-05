@@ -21,7 +21,7 @@ function App(props) {
         <Routes>
           <Route path="/profile/*" element={<ProfilePage />}></Route>
           <Route path="/dialogs/*" element={<Dialogs />}></Route>
-          <Route path="/users/*" element={<UsersContainer />}></Route>
+          <Route path="/users/page/*" element={<UsersContainer />}></Route>
         </Routes>
       </div>
       <Footer className="Footer" />
