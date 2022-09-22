@@ -5,5 +5,6 @@
   padding: 0;
 }
 body {
-  background-color: cadetblue;
+  background: linear-gradient(90deg, #0b3975 0%, #2f5f86 100%);
+  max-width: 1440px;
 }

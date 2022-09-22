@@ -6,6 +6,7 @@
   height: auto;
   margin: 0;
   grid-area: Content;
+  margin-left: 2rem;
 }
 .profile_wrap__background img {
   max-width: 150%;

@@ -5,9 +5,18 @@ import s from './navbar.module.css';
 let NavBar = () => {
   return (
     <nav className={s.wrapper}>
-      <NavLink to="profile/">Profile</NavLink>
-      <NavLink to="dialogs/">Dialogs</NavLink>
-      <NavLink to="users/*">Users</NavLink>
+      <NavLink className={s.link} to="/">
+        Home
+      </NavLink>
+      <NavLink className={s.link} to="profile/">
+        Profile
+      </NavLink>
+      <NavLink className={s.link} to="/trends">
+        Trends
+      </NavLink>
+      <NavLink className={s.link} to="/users">
+        Users
+      </NavLink>
     </nav>
   );
 };

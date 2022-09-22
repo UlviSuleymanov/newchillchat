@@ -1,0 +1,19 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.h3 {
+  margin-right: auto;
+  max-width: 500px;
+  justify-self: center;
+  margin-left: 3rem;
+  margin-top: 3rem;
+}
+
+.hero {
+  width: 600px;
+  height: 500px;
+  margin-right: 1rem;
+}

@@ -1,15 +1,31 @@
 .wrapper {
   display: flex;
-  background-color: blue;
-  margin-top: 5rem;
+  background: linear-gradient(90deg, #0b3975 0%, #2f5f86 100%);
+  margin-top: 3.85rem;
   flex-direction: row;
   justify-content: space-between;
   height: 2.5rem;
-  grid-area: Footer;
+  color: antiquewhite;
+  font-family: popins;
+  border-top: 1px solid #fff;
+  padding: 1rem;
 }
 .address address {
   display: inline;
   justify-content: center;
   justify-items: center;
   padding: 2rem;
+}
+.btn {
+  background: #f34f2e;
+  border-radius: 10px;
+  color: #fff;
+  border: none;
+  margin-right: 0.5rem;
+  width: 100px;
+  height: 50px;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: #f57359;
 }

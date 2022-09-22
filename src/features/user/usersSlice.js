@@ -5,15 +5,10 @@ const initialState = {
   loading: false,
   users: [],
   error: '',
-  pageSize: 5,
-  totalUsersCount: 0,
-  currentPage: 2,
 };
 
-export const fetchUsers = createAsyncThunk('fetchUsers', async (CurrentPage, totalUsersCount) => {
-  const response = await axios.get(
-    `https://social-network.samuraijs.com/api/1.0/users?page=${CurrentPage}&count=${totalUsersCount}`,
-  );
+export const fetchUsers = createAsyncThunk('fetchUsers', async () => {
+  const response = await axios.get(`https://jsonplaceholder.typicode.com/users`);
   console.log(response);
   return response.data;
 });
@@ -28,9 +23,7 @@ const usersSlice = createSlice({
     });
     builder.addCase(fetchUsers.fulfilled, (state, action) => {
       state.loading = false;
-      state.users = action.payload.items;
-      state.totalUsersCount = action.payload.totalCount;
-      state.currentPage = action.payload.items;
+      state.users = action.payload;
       state.error = '';
     });
     builder.addCase(fetchUsers.rejected, (state, action) => {

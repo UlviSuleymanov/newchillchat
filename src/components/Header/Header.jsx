@@ -1,13 +1,13 @@
 import React from 'react';
-import logo from '../../assets/images/ChillChat.png';
+import NavBar from '../NavBar/NavBar';
 import s from './header.module.css';
 const Header = () => {
   const isUser = true;
-  const list = ['Sign in', 'Sign up'];
+  const list = ['Sign In', 'Sign Up'];
   return (
     <header>
-      <img className={s.logo} src={logo} alt="logo" />
-      {isUser ? '' : list.map((i) => <button className={s.button}>{i}</button>)}
+      <h4 className={s.logo}>Chillchat</h4>
+      {isUser ? <NavBar /> : list.map((item) => <button className={s.button}>{item}</button>)}
     </header>
   );
 };

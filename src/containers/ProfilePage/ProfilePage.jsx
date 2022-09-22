@@ -10,6 +10,7 @@ const ProfilePage = () => {
   const dispatch = useDispatch();
   const elementKey = 'ddownitem_';
   // const [text, setText] = React.useState('');
+  const [currentName, setCurrentName] = React.useState('Default Name');
   const postElements = state.map((data, i) => (
     <MyPosts name={data.name} text={data.text} id={data.id} likeCount={data.likeCount} key={i} />
   ));
@@ -27,11 +28,9 @@ const ProfilePage = () => {
           alt="profilepic"
         />
         <div className={s.profile_wrap__content_text}>
-          <h3>Name Surename</h3>
-          <p>Date of Birth</p>
-          <p>city</p>
-          <p>Education</p>
-          <p>Job</p>
+          <h3>{currentName}</h3>
+          {/*modal duzelt*/}
+          {/* <button onClick={()}>change name</button> */}
         </div>
         <div>
           <h4>Add Post</h4>
