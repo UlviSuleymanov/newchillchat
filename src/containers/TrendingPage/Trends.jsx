@@ -51,12 +51,14 @@ const Trends = () => {
       <MyModal visible={modal} setVisible={setModal}>
         <TrendForm create={createNewPost} />
       </MyModal>
-      <MyButton style={{ marginTop: 30 }} onClick={() => setModal(true)}>
-        Create a new post
-      </MyButton>
-      <TrendFilter filter={filter} setFilter={setFilter} />
+      <div style={{ display: 'felx', flexDirection: 'row' }}>
+        <MyButton style={{ marginTop: 30 }} onClick={() => setModal(true)}>
+          Create a new Post
+        </MyButton>
+        <TrendFilter filter={filter} setFilter={setFilter} />
+      </div>
+
       {postError && <h1>Something went wrong ${postError}</h1>}
-      <hr style={{ margin: '15px 0' }}></hr>
       {isLoading ? (
         <div style={{ display: 'flex', justifyContent: 'center', marginTop: 50 }}>
           <img src={loader} alt={loader} />

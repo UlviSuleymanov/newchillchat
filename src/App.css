@@ -29,13 +29,26 @@
   transition: all 500ms ease-in;
 }
 .page_wrapper {
-  margin: 15px 0px 10px 0px;
+  margin-top: 1rem;
+  margin-bottom: auto;
+  margin-left: auto;
+  margin-right: auto;
   display: flex;
 }
 .page {
   padding: 10px;
-  border: 1px solid teal;
+  width: 35px;
+  height: 40px;
+  border-radius: 4px;
+  font-size: 14px;
+  margin: 0.1rem;
+  text-align: center;
+  background-color: #f34f2e;
+  border: none;
   cursor: pointer;
+}
+.page:hover {
+  background-color: #ee735b;
 }
 .page_current {
   border: 1px solid gold;

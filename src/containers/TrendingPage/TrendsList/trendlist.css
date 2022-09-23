@@ -1,0 +1,27 @@
+.post {
+  display: flex;
+  flex-direction: column;
+  margin-top: 15px;
+  align-items: center;
+  margin-bottom: auto;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2rem;
+  border: 2px solid rgb(147, 160, 194);
+  border-radius: 10px;
+}
+.post_btn {
+  margin-left: auto;
+  width: 100px;
+}
+.post__container {
+  width: 800px;
+}
+.group {
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+}
+.item {
+  margin-left: 10rem;
+}

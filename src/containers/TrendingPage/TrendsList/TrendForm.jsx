@@ -26,15 +26,15 @@ const TrendForm = (props) => {
         value={post.title}
         onChange={(e) => setPost({ ...post, title: e.target.value })}
         type="text"
-        placeholder="Name of Task"
+        placeholder="Header"
       />
       <MyInput
         value={post.body}
         onChange={(e) => setPost({ ...post, body: e.target.value })}
         type="text"
-        placeholder="Description of Task"
+        placeholder="Body"
       />
-      <MyButton onClick={addNewPost}>Add Task</MyButton>
+      <MyButton onClick={addNewPost}>Add</MyButton>
     </form>
   );
 };
